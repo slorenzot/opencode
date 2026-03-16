@@ -1,5 +1,6 @@
 mod cli;
 mod constants;
+mod git;
 #[cfg(target_os = "linux")]
 pub mod linux_display;
 #[cfg(target_os = "linux")]
@@ -387,7 +388,8 @@ fn make_specta_builder() -> tauri_specta::Builder<tauri::Wry> {
             check_app_exists,
             wsl_path,
             resolve_app_path,
-            open_path
+            open_path,
+            git::get_git_branch
         ])
         .events(tauri_specta::collect_events![
             LoadingWindowComplete,

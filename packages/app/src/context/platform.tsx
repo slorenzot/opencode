@@ -87,6 +87,9 @@ export type Platform = {
 
   /** Read image from clipboard (desktop only) */
   readClipboardImage?(): Promise<File | null>
+
+  /** Get current Git branch for a directory (desktop only) */
+  getGitBranch?(directory: string): Promise<string | null>
 }
 
 export type DisplayBackend = "auto" | "wayland"

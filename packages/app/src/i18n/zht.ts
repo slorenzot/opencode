@@ -277,6 +277,8 @@ export const dict = {
   "prompt.action.send": "傳送",
   "prompt.action.stop": "停止",
 
+  "prompt.branch.tooltip": "當前 Git 分支",
+
   "prompt.toast.pasteUnsupported.title": "不支援的附件",
   "prompt.toast.pasteUnsupported.description": "此處僅能附加圖片、PDF 或文字檔案。",
   "prompt.toast.modelAgentRequired.title": "請選擇代理程式和模型",

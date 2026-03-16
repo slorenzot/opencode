@@ -277,6 +277,8 @@ export const dict = {
   "prompt.action.send": "Enviar",
   "prompt.action.stop": "Detener",
 
+  "prompt.branch.tooltip": "Rama Git actual",
+
   "prompt.toast.pasteUnsupported.title": "Adjunto no compatible",
   "prompt.toast.pasteUnsupported.description": "Solo se pueden adjuntar imágenes, PDFs o archivos de texto aquí.",
   "prompt.toast.modelAgentRequired.title": "Selecciona un agente y modelo",

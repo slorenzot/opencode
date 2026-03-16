@@ -1023,6 +1023,22 @@ export const PromptInput: Component<PromptInputProps> = (props) => {
   })
 
   const variants = createMemo(() => ["default", ...local.model.variant.list()])
+
+  // Git branch state (desktop only via platform)
+  const [branch, setBranch] = createSignal<string | undefined>()
+
+  createEffect(
+    on(
+      () => sdk.directory,
+      (dir) => {
+        if (!platform.getGitBranch) return
+        platform.getGitBranch(dir).then((result) => {
+          setBranch(result ?? undefined)
+        })
+      },
+    ),
+  )
+
   const accepting = createMemo(() => {
     const id = params.id
     if (!id) return permission.isAutoAcceptingDirectory(sdk.directory)
@@ -1556,6 +1572,14 @@ export const PromptInput: Component<PromptInputProps> = (props) => {
                     <Icon name="shield" size="small" classList={{ "text-icon-success-base": accepting() }} />
                   </Button>
                 </TooltipKeybind>
+                <Show when={branch()}>
+                  <Tooltip placement="top" gutter={8} value={language.t("prompt.branch.tooltip")}>
+                    <div class="flex items-center gap-1 px-2 h-7 text-13-regular text-text-dimmed">
+                      <Icon name="branch" size="small" />
+                      <span class="truncate max-w-[120px]">{branch()}</span>
+                    </div>
+                  </Tooltip>
+                </Show>
               </div>
             </div>
           </div>

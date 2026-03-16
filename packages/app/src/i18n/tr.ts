@@ -282,6 +282,8 @@ export const dict = {
   "prompt.action.send": "Gönder",
   "prompt.action.stop": "Durdur",
 
+  "prompt.branch.tooltip": "Geçerli Git dalı",
+
   "prompt.toast.pasteUnsupported.title": "Desteklenmeyen ek",
   "prompt.toast.pasteUnsupported.description": "Buraya yalnızca resimler, PDF'ler veya metin dosyaları eklenebilir.",
   "prompt.toast.modelAgentRequired.title": "Bir ajan ve model seçin",

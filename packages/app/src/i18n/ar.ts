@@ -257,6 +257,9 @@ export const dict = {
   "prompt.attachment.remove": "إزالة المرفق",
   "prompt.action.send": "إرسال",
   "prompt.action.stop": "توقف",
+
+  "prompt.branch.tooltip": "فرع Git الحالي",
+
   "prompt.toast.pasteUnsupported.title": "مرفق غير مدعوم",
   "prompt.toast.pasteUnsupported.description": "يمكن إرفاق الصور أو ملفات PDF أو الملفات النصية فقط هنا.",
   "prompt.toast.modelAgentRequired.title": "حدد وكيلاً ونموذجاً",

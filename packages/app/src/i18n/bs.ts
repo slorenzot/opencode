@@ -278,6 +278,8 @@ export const dict = {
   "prompt.action.send": "Pošalji",
   "prompt.action.stop": "Zaustavi",
 
+  "prompt.branch.tooltip": "Trenutna Git grana",
+
   "prompt.toast.pasteUnsupported.title": "Nepodržan prilog",
   "prompt.toast.pasteUnsupported.description": "Ovdje se mogu priložiti samo slike, PDF-ovi ili tekstualne datoteke.",
   "prompt.toast.modelAgentRequired.title": "Odaberi agenta i model",

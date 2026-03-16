@@ -280,6 +280,8 @@ export const dict = {
   "prompt.action.send": "Send",
   "prompt.action.stop": "Stopp",
 
+  "prompt.branch.tooltip": "Nåværende Git-gren",
+
   "prompt.toast.pasteUnsupported.title": "Ikke støttet vedlegg",
   "prompt.toast.pasteUnsupported.description": "Kun bilder, PDF-er eller tekstfiler kan legges ved her.",
   "prompt.toast.modelAgentRequired.title": "Velg en agent og modell",

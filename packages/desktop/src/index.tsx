@@ -400,6 +400,11 @@ const createPlatform = (): Platform => {
         }, "image/png")
       })
     },
+
+    async getGitBranch(directory: string) {
+      const result = await commands.getGitBranch(directory).catch(() => null)
+      return result?.branch ?? null
+    },
   }
 }
 
